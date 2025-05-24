@@ -4,9 +4,11 @@ from pymongo import MongoClient
 import matplotlib.pyplot as plt
 
 # Koneksi MongoDB
-client = MongoClient("mongodb://localhost:27017/")
-db = client["selvoi_db"]
-collection = db["penyandang_disabilitas"]
+uri = "mongodb+srv://dewi85280:biartuhansaja@selvoi.w5zmt4f.mongodb.net/?retryWrites=true&w=majority&appName=selvoi"
+
+client = MongoClient(uri)
+db = client['visualisasi']  # Ganti dengan nama database kamu
+collection = db['disabilitas_tunarungu']  # Ganti dengan nama collection kamu
 
 # Ambil data
 data = list(collection.find())
