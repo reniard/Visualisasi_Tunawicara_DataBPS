@@ -4,7 +4,7 @@ from pymongo import MongoClient
 import matplotlib.pyplot as plt
 
 # Koneksi MongoDB
-uri = "mongodb+srv://dewi85280:biartuhansaja@selvoi.w5zmt4f.mongodb.net/?retryWrites=true&w=majority&appName=selvoi"
+uri = "mongodb+srv://dewi85280:biartuhansaja@selvoi.w5zmt4f.mongodb.net/selvoi?retryWrites=true&w=majority"
 
 client = MongoClient(uri)
 db = client['visualisasi']
