@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 uri = "mongodb+srv://dewi85280:biartuhansaja@selvoi.w5zmt4f.mongodb.net/?retryWrites=true&w=majority&appName=selvoi"
 
 client = MongoClient(uri)
-db = client['visualisasi']  # Ganti dengan nama database kamu
-collection = db['disabilitas_tunarungu']  # Ganti dengan nama collection kamu
+db = client['visualisasi']
+collection = db['disabilitas_tunarungu']
 
 # Ambil data
 data = list(collection.find())
